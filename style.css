@@ -1,0 +1,75 @@
+.main {
+  position: relative;
+}
+
+.main:after,
+.main:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+}
+
+.main:after {
+  background: radial-gradient(circle, red, transparent);
+  background-size: 400%;
+  animation: colorSpin 30s linear infinite;
+}
+
+.main:before {
+  background-color: yellow;
+}
+
+@keyframes colorSpin {
+  25% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap");
+
+* {
+  color: #fff;
+  font-family: "Lexend Mega", sans-serif;
+}
+.right {
+  /* border: 1px solid black; */
+  height: 100vh;
+  padding: 5%;
+  text-align: center;
+}
+.welcome {
+  font-size: 2em;
+  margin: 10%;
+}
+.message {
+}
+.bill-amount-container {
+  border-bottom: 2px solid #fff;
+  padding: 2%;
+  width: 50%;
+}
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+}
+button {
+  background: none;
+  border: 2px solid pink;
+  color: grey;
+  margin: 10%;
+  padding: 1%;
+}
