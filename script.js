@@ -4,11 +4,10 @@ let percent10 = document.querySelector(".percent-10");
 let tipAmount = 0;
 
 let calculateTip = () => {
-  console.log("click");
-  tipAmount = billAmount.value * 0.1;
-  console.log(tipAmount);
-  tipOutput.innerHTML = tipAmount;
-  billAmount.value = "";
+  tipAmount = billAmount.value * 0.12;
+  // tipAmount = billAmount.value * 0.1;
+  tipOutput.innerHTML = "Tip amount <br/> $" + tipAmount.toFixed(2);
+  // billAmount.value = "";
 };
 
 percent10.addEventListener("click", calculateTip);

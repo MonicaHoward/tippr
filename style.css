@@ -43,12 +43,21 @@
   color: #fff;
   font-family: "Lexend Mega", sans-serif;
 }
+.left {
+  font-size: 4em;
+  padding: 30%;
+  text-align: center;
+}
+.tipOutput {
+  text-align: center;
+}
 .right {
   /* border: 1px solid black; */
   height: 100vh;
   padding: 5%;
   text-align: center;
 }
+
 .welcome {
   font-size: 2em;
   margin: 10%;
